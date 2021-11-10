@@ -6,9 +6,9 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='A live blockchain demo in a browser.')
     meta(name='author', content='Anders Brownworth')
-    link(rel='icon', href='/favicon.ico')
+    link(rel='icon', href='/favicon2.ico')
 
-    title Blockchain Demo
+    title Nerd Chat
 
     link(rel='stylesheet', href='/stylesheets/lib/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/lib/bootstrap-theme.min.css')
@@ -34,7 +34,7 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') #{__('Blockchain Demo')}
+          a.navbar-brand(href='/') #{__(' 🤓 Nerd Chat')}
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li(class={active: page === 'hash'})
@@ -45,9 +45,11 @@ html
               a(href='/blockchain') #{__('Blockchain')}
             li(class={active: page === 'distributed'})
               a(href='/distributed') #{__('Distributed')}
-            li(class={active: page === 'tokens'})
-              a(href='/tokens') #{__('Tokens')}
-            li(class={active: page === 'coinbase'})
-              a(href='/coinbase') #{__('Coinbase')}
+            li(class={active: page === 'transactions'})
+              a(href='/transactions') #{__('Transactions')}
+            li(class={active: page === 'smart_contract'})
+              a(href='/smart_contract') #{__('Smart Contract')}
+            li(class={active: page === 'why'})
+              a(href='/why') #{__('Why?')}
 
     block content

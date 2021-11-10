@@ -1,7 +1,10 @@
 version: '2'
 services:
   blockchain-demo:
+    command: sh -c 'npm start'
     build: .
     image: blockchain-demo:latest
     ports:
       - "3000:3000"
+    volumes:
+      - .:/blockchain-demo
